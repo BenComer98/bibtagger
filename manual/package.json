@@ -1,0 +1,22 @@
+{
+  "name": "bibtagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "run.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/run.js",
+    "start": "concurrently npm:start:*",
+    "tests:build": "tsc -w",
+    "tests:run": "nodemon build/tests/run.js",
+    "tests": "concurrently npm:tests:*"
+  },
+  "keywords": [],
+  "author": "bcomer",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.6.3",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}
