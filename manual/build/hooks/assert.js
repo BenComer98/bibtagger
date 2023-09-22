@@ -5,7 +5,7 @@ function assert(condition, message) {
         message = "Assertion failed.";
     }
     if (!condition) {
-        console.log(message);
+        console.error(message);
     }
 }
 exports.default = assert;

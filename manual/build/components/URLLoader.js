@@ -26,10 +26,7 @@ class URLLoader {
         this.urls = fs_1.default.readFileSync(this.path, {
             encoding: 'utf-8'
         })
-            .split('\n')
-            .map((url) => {
-            return url.replace('\r', '');
-        });
+            .split('\r\n');
     }
     reset_path(path) {
         // Resets the path to the given param and url's to empty.

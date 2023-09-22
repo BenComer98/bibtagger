@@ -21,10 +21,7 @@ export class URLLoader {
     this.urls = fs.readFileSync(this.path, {
       encoding: 'utf-8'
     })
-    .split('\n')
-    .map((url: string): string => {
-      return url.replace('\r', '');
-    })
+    .split('\r\n')
   }
 
   public reset_path(path:string): void {

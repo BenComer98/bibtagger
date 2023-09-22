@@ -4,7 +4,7 @@ function assert(condition: boolean, message?: string): void {
   }
 
   if (!condition) {
-    console.log(message);
+    console.error(message);
   }
 }
 
