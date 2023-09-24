@@ -15,7 +15,10 @@
   "author": "bcomer",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/storage": "^7.1.0",
+    "@google-cloud/vision": "^4.0.2",
     "@types/node": "^20.6.3",
+    "canvas": "^2.11.2",
     "concurrently": "^8.2.1",
     "nodemon": "^3.0.1"
   }
